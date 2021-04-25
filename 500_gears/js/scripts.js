@@ -1,6 +1,7 @@
-$(function() {
-  setTimeout(function(){
-    $('body').removeClass('loading');
-  }, 1000);
-});
+
+setTimeout(function(){
+  el = document.getElementsByTagName('body');
+  el[0].className = el[0].className.replace("loading", "");
+  // .removeClass('loading');
+}, 1000);
 
